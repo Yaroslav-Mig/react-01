@@ -1,8 +1,9 @@
 import React from 'react';
+import styles from './MainPage.module.css';
 
-export function Profile() {
+export function MainPage() {
 	return (
-		<main>
+		<main className={styles.container}>
 			<section>
 				<h2>Profile</h2>
 				<div>

@@ -2,14 +2,14 @@ import React from 'react';
 import './App.css';
 import { Header } from './components/header/Header';
 import { Navbar } from './components/navbar/Navbar';
-import { Profile } from './components/profile/Profile';
+import { MainPage } from './components/main/MainPage';
 
 const App = () => {
   return (
     <div className='wrapper'>
       <Header />
       <Navbar />
-			<Profile />
+			<MainPage />
     </div>
   );
 };

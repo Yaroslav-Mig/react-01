@@ -1,26 +1,44 @@
 import React from 'react';
+import styles from './Navbar.module.css';
+import { images } from '../../assets/images';
 
 export function Navbar() {
 	return (
-		<aside>
-			<div>
-				<img src="#" alt="user background" />
+		<aside className={styles.container}>
+			<div className={styles.box_background}>
+				<img className={styles.background} src={`${images.navBackground}`} alt="user background" />
 			</div>
-			<figure>
-				<img src="#" alt="user avatar" />
-				<figcaption>User Name</figcaption>
+			<figure className={styles.box_avatar}>
+				<img className={styles.avatar} src={`${images.userAvatar}`} alt="user avatar" />
+				<figcaption className={styles.user_name}>User Name</figcaption>
 			</figure>
 			<nav>
 				<h2>My profile</h2>
-				<ul>
-					<li><a href="#">Profile</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">News</a></li>
-					<li><a href="#">Messenger</a></li>
-					<li><a href="#">Friends</a></li>
-					<li><a href="#">Communities</a></li>
-					<li><a href="#">Photos</a></li>
-					<li><a href="#">Settings</a></li>
+				<ul className={styles.box_link}>
+					<li>
+						<a className={styles.link_item} href="#">Profile</a>
+					</li>
+					<li>
+						<a className={styles.link_item} href="#">About</a>
+					</li>
+					<li>
+						<a className={styles.link_item} href="#">News</a>
+					</li>
+					<li>
+						<a className={styles.link_item} href="#">Messenger</a>
+					</li>
+					<li>
+						<a className={styles.link_item} href="#">Friends</a>
+					</li>
+					<li>
+						<a className={styles.link_item} href="#">Communities</a>
+					</li>
+					<li>
+						<a className={styles.link_item} href="#">Photos</a>
+					</li>
+					<li>
+						<a className={styles.link_item} href="#">Settings</a>
+					</li>
 				</ul>
 			</nav>
 		</aside>

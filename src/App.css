@@ -1,6 +1,14 @@
 .wrapper {
-	display: grid;
-}
-.header {
-	
+  display: grid;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  grid-template-columns: [col-1] minmax(auto, 200px) [col-2] 1fr [col-3];
+  grid-template-rows: [row-1] fit-content(50vh) [row-2] minmax(250px, auto) [row-3];
+  grid-template-areas:
+    'head head'
+    'nav main'
+    '... main';
+  gap: 30px 20px;
+  background-color: seashell;
 }
