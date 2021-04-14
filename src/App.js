@@ -9,7 +9,7 @@ const App = () => {
     <div className='wrapper'>
       <Header />
       <Navbar />
-			<MainPage />
+      <MainPage />
     </div>
   );
 };
